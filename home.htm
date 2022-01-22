@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maniac Music Player | One stop for all songs</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBsb2dvfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+    <script src="home.js"></script>
+</head>
+<body>
+  
+    <nav>
+        <li title="Home"><a href="home.htm">HOME</a></li>
+        <li title="Sing in">SIGN IN</li>
+        <li title="Create account">CREATE ACCOUNT</li>
+        <li title="Download app" onclick="openwin()" id="nav-4">DOWNLOAD OUR APP</li>
+    </nav>
+    <center><div id="search-bar">
+        <img src="/1x/outline_search_black_24dp.png" id="iconsearch">
+        <p id="search" >Search for your own song</p>
+       <!-- <img src="/1x/outline_mic_black_24dp.png" id="mic">-->
+    </div></center>
+  <div id="control-song"> <center> <button id="play" title="plays a random song when you don't select a particluar one" onclick="playaudio()">PLAY</button></center>
+   <center><button id="nextsong" title="Play next song">NEXT</button></center>
+   <center><button id="pause" title="To pause the song click on me" onclick="pauseaudio()">PAUSE</button></center>
+</div>
+    <audio  id="music-1">
+      <!--  <source src="Natu-Natu(PaglaSongs).mp3" type="audio/mpeg" id="song1">
+      -->        <source src="https://wynk.in/u/uwUjDaaM3" type="audio/mpeg" id="song2">
+    </audio>
+    <footer>
+        <img src="/1x/outline_dark_mode_black_24dp.png" id="dark" onclick="darkmode()"  title="Dark-Theme">
+        <img src="/1x/outline_light_mode_black_24dp.png" id="light" onclick="lightmode()" title="Light-Theme">
+    </footer>
+</body>
+</html>
